@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ page import="user.UserDAO" %> <%--í´ë˜ìŠ¤ ê°€ì ¸ì˜¤ê¸° --%>
-<%@ page import="java.io.PrintWriter" %> <%--ìë°” ìŠ¤í¬ë¦½íŠ¸ì‘ì„±ì„ ìœ„í•¨ --%>
-<%request.setCharacterEncoding("UTF-8"); %>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ page import="user.UserDAO" %> <%--Å¬·¡½º °¡Á®¿À±â --%>
+<%@ page import="java.io.PrintWriter" %> <%--ÀÚ¹Ù ½ºÅ©¸³Æ®ÀÛ¼ºÀ» À§ÇÔ --%>
+<%request.setCharacterEncoding("EUC-KR"); %>
 <jsp:useBean id="user" class="user.User" scope="page"/>
 <jsp:setProperty name="user" property="userID"/>
 <jsp:setProperty name="user" property="userPassword"/>
@@ -12,19 +12,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
-<title>JSPê²Œì‹œíŒ ì›¹ ì‚¬ì´íŠ¸</title>
+<meta http-equiv="Content-Type" content="text/html; charset= EUC-KR">
+<title>JSP°Ô½ÃÆÇ À¥ »çÀÌÆ®</title>
 </head>
 <body>
 	<%
 	String userID=null;
-	if(session.getAttribute("userID")!=null){
-		userID=(String) session.getAttribute("userID");
+	if(session.getAttribute("useID")!=null){
+		userID=(String) session.getAttribute("useID");
 	}
 	if(userID!=null){
 		PrintWriter script=response.getWriter();
 		script.println("<script>");
-		script.println("slert('ì´ë¯¸ ë¡œê·¸ì¸ì´ ë˜ì–´ìˆìŠµë‹ˆë‹¤.')");
+		script.println("slert('ÀÌ¹Ì ·Î±×ÀÎÀÌ µÇ¾îÀÖ½À´Ï´Ù.')");
 		script.println("location.href='main.jsp'");
 		script.println("</script>");
 	}
@@ -32,8 +32,8 @@
 		||user.getUserGender()==null||user.getUserEmail()==null){
 			PrintWriter script=response.getWriter();
 			script.println("<script>");
-			script.println("alert('ì…ë ¥ì´ ì•ˆ ëœ ì‚¬í•­ì´ ìˆìŠµë‹ˆë‹¤.')");
-			script.println("history.back()"); //ì´ì „ í˜ì´ì§€ë¡œ ì´ë™
+			script.println("alert('ÀÔ·ÂÀÌ ¾È µÈ »çÇ×ÀÌ ÀÖ½À´Ï´Ù.')");
+			script.println("history.back()"); //ÀÌÀü ÆäÀÌÁö·Î ÀÌµ¿
 			script.println("</script>");
 		}
 		else{
@@ -42,7 +42,7 @@
 			if(result==-1){
 				PrintWriter script=response.getWriter();
 				script.println("<script>");
-				script.println("alert('IDê°€ ì¡´ì¬í•©ë‹ˆë‹¤.')");
+				script.println("alert('ID°¡ Á¸ÀçÇÕ´Ï´Ù.')");
 				script.println("history.back()");
 				script.println("</script>");
 			}

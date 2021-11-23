@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset= EUC-KR">
-<meta name="viewport" content="width=divice-width", initial-scale="1"> <%--¹ÝÀÀÇü µðÀÚÀÎ--%>
+<meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
+<meta name="viewport" content="width=divice-width" initial-scale="1"> <%--ë°˜ì‘í˜• ë””ìžì¸--%>
 <link rel="stylesheet" href="css/bootstrap.css">
-<title>JSP°Ô½ÃÆÇ À¥ »çÀÌÆ®</title>
+<title>JSPê²Œì‹œíŒ ì›¹ ì‚¬ì´íŠ¸</title>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -18,21 +18,21 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="main.jsp">JSP °Ô½ÃÆÇ À¥ »çÀÌÆ®</a>
+			<a class="navbar-brand" href="main.jsp">JSP ê²Œì‹œíŒ ì›¹ ì‚¬ì´íŠ¸</a>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="main.jsp">¸ÞÀÎ</a></li>
-				<li><a href="bbs.jsp">°Ô½ÃÆÇ</a></li>		
+				<li><a href="main.jsp">ë©”ì¸</a></li>
+				<li><a href="bbs.jsp">ê²Œì‹œíŒ</a></li>		
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">Á¢¼ÓÇÏ±â<span class="caret"></span></a>
+						aria-expanded="false">ì ‘ì†í•˜ê¸°<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li class="active"><a href="login.jsp">·Î±×ÀÎ</a></li> <%--active ÇöÀç ¼±ÅÃµÈ È¨ÆäÀÌÁö¸¦ ÀÇ¹Ì  ÇÑ°³ÀÇ È¨ÆäÀÌÁö¿¡¸¸ µé¾î°¥ ¼ö ÀÖ´Ù--%>
-						<li><a href="join.jsp">È¸¿ø°¡ÀÔ</a></li>
+						<li><a href="login.jsp">ë¡œê·¸ì¸</a></li> <%--active í˜„ìž¬ ì„ íƒëœ í™ˆíŽ˜ì´ì§€ë¥¼ ì˜ë¯¸  í•œê°œì˜ í™ˆíŽ˜ì´ì§€ì—ë§Œ ë“¤ì–´ê°ˆ ìˆ˜ ìžˆë‹¤--%>
+						<li class="active"><a href="join.jsp">íšŒì›ê°€ìž…</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -43,30 +43,30 @@
 		<div class="col-lg-4">
 			<div class="jumbotron" style="padding-top:20px;">
 				<form method="post" action="joinAction.jsp">
-					<h3 style="text-align:center;">È¸¿ø°¡ÀÔ È­¸é</h3>
+					<h3 style="text-align:center;">íšŒì›ê°€ìž… í™”ë©´</h3>
 					<div class="form-group">		
-						<input type="text" class="form-control" placeholder="¾ÆÀÌµð" name="userID" maxlength="20">		<%--placeholder=°ø¹é½Ã Ãâ·Â¹®ÀÚ --%>
+						<input type="text" class="form-control" placeholder="ì•„ì´ë””" name="userID" maxlength="20">		<%--placeholder=ê³µë°±ì‹œ ì¶œë ¥ë¬¸ìž --%>
 					</div>
 					<div class="form-group">		
-						<input type="password" class="form-control" placeholder="ºñ¹Ð¹øÈ£" name="userPassword" maxlength="20">		
+						<input type="password" class="form-control" placeholder="ë¹„ë°€ë²ˆí˜¸" name="userPassword" maxlength="20">		
 					</div>
 					<div class="form-group">		
-						<input type="name" class="form-control" placeholder="ÀÌ¸§" name="userName" maxlength="20">		
+						<input type="name" class="form-control" placeholder="ì´ë¦„" name="userName" maxlength="20">		
 					</div>
 					<div class="form-group" style="text-align:center;">		
 						<div class="btn-group" data-toggle="buttons">
-							<lable class="btn vtn-primary active"> <%--active== ±âº» ¼±ÅÃ --%>
-								<input type="radio" name="userGender" autocomplete="off" value="³²ÀÚ" checked>³²ÀÚ
+							<lable class="btn vtn-primary active"> <%--active== ê¸°ë³¸ ì„ íƒ --%>
+								<input type="radio" name="userGender" autocomplete="off" value="ë‚¨ìž" checked>ë‚¨ìž
 							</lable>
 							<lable class="btn vtn-primary"> 
-								<input type="radio" name="userGender" autocomplete="off" value="¿©ÀÚ" checked>¿©ÀÚ
+								<input type="radio" name="userGender" autocomplete="off" value="ì—¬ìž" checked>ì—¬ìž
 							</lable>
 						</div>
 					</div>
 					<div class="form-group">		
-						<input type="email" class="form-control" placeholder="ÀÌ¸ÞÀÏ" name="userEmail" maxlength="50">		
+						<input type="email" class="form-control" placeholder="ì´ë©”ì¼" name="userEmail" maxlength="50">		
 					</div>
-					<input type="submit" class="btn vtn-primary form-control" value="È¸¿ø°¡ÀÔ">
+					<input type="submit" class="btn vtn-primary form-control" value="íšŒì›ê°€ìž…">
 				</form>
 			</div>
 		</div>
