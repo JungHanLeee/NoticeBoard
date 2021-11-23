@@ -26,6 +26,7 @@
 보안상 문제로 웹에서 로컬파일을 수정하는게 불가능하여 배워본적 없는 서버쪽까지 건드려보게 돼서 기쁘다
 
 강의와 mysql버전이 달라서 며칠간 고생했다;;11/21
+글 제목에 utf8을 적용하려고 시행착오를 많이 격었다. 11/22~23
 # References
 
 [참고한 유튜브](https://www.youtube.com/watch?v=MtxFWczSFqU&list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6&index=2)
