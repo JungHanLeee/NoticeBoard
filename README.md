@@ -13,9 +13,13 @@
 + 회원가입후 메인이동, 데이터베이스 통신
 ![image](https://user-images.githubusercontent.com/89134202/142763440-0924b463-cb96-4b34-9a28-1b0575f63d71.png)
 
++ 게시판에 작성 기능추가
+![image](https://user-images.githubusercontent.com/89134202/142997041-268b9dc8-e1b2-4857-963f-86f3c57d2260.png)
+
+
 # TodoList
 ~~+ 서버와 데이터 통신~~
-+ 게시판 메인화면 작성
+~~+ 게시판 메인화면 작성~~게시판 정보가 데이터베이스에는 있는데 페이지에는 아직 못 넣었다
 + 글 작성,삭제
 
 # 느낀점
