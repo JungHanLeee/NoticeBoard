@@ -16,6 +16,8 @@
 + 게시판에 작성 기능추가
 ![image](https://user-images.githubusercontent.com/89134202/142997041-268b9dc8-e1b2-4857-963f-86f3c57d2260.png)
 ![image](https://user-images.githubusercontent.com/89134202/143244398-4e0a6e0b-21fc-48c4-b5f6-b5f5edf60d6a.png)
++ 게시글 수정 삭제기능
+![image](https://user-images.githubusercontent.com/89134202/143256674-af26d3e5-0f59-43cb-a59b-ca6c816477bc.png)
 
 
 
@@ -24,7 +26,7 @@
 
 ~~게시판 메인화면 작성게시판 정보가 데이터베이스에는 있는데 페이지에는 아직 못 넣었다~~
 
-+ 글 작성,삭제
+~~+ 글 작성,삭제~~
 
 # 기록
 보안상 문제로 웹에서 로컬파일을 수정하는게 불가능하여 배워본적 없는 서버쪽까지 건드려보게 돼서 기쁘다
