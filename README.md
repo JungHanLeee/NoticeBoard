@@ -32,9 +32,12 @@
 보안상 문제로 웹에서 로컬파일을 수정하는게 불가능하여 배워본적 없는 서버쪽까지 건드려보게 돼서 기쁘다
 
 강의와 mysql버전이 달라서 며칠간 고생했다;;11/21
+
 글 제목에 utf8을 적용하려고 시행착오를 많이 격었다. 11/22~23
+
 진짜 접을 뻔했다;; 고치고 다음날 되면 또 오류가 난다
-ALTER TABLE user convert to charset utf8;!! 11/24
+ALTER TABLE user convert to charset utf8;  
+특수문자 또한 출력이 가능하게 해 악성스크립트 방지//1124
 # References
 
 [참고한 유튜브](https://www.youtube.com/watch?v=MtxFWczSFqU&list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6&index=2)
