@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
-<meta name="viewport" content="width=divice-width" initial-scale="1"> <%--반응형 디자인--%>
+<meta name="viewport" content="width=divice-width" initial-scale="1"> <!--반응형 디자인-->
 <link rel="stylesheet" href="css/bootstrap.css">
 <title>JSP게시판 웹 사이트</title>
 </head>
@@ -31,7 +31,7 @@
 						data-toggle="dropdown" role="button" aria-haspopup="true"
 						aria-expanded="false">접속하기<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li class="active"><a href="login.jsp">로그인</a></li> <%--active 현재 선택된 홈페이지를 의미  한개의 홈페이지에만 들어갈 수 있다--%>
+						<li class="active"><a href="login.jsp">로그인</a></li> <!--active 현재 선택된 홈페이지를 의미  한개의 홈페이지에만 들어갈 수 있다-->
 						<li><a href="join.jsp">회원가입</a></li>
 					</ul>
 				</li>

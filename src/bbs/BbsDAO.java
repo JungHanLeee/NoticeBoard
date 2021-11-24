@@ -105,6 +105,27 @@ public class BbsDAO {
 		}
 		return false;
 	}
+	public Bbs getBbs(int bbsID) {
+		String SQL="SELECT * FROM BBS WHERE bbsID =?"; //가장 마지막에 쓰인 게시물의 번호를 가져온다
+		try {
+			PreparedStatement pstmt =conn.prepareStatement(SQL); //현재 연결되어있는 객체(conn)을 이용해서 SQL문장을 실행 준비단계 로 만들어준다
+			pstmt.setInt(1, bbsID);
+			rs=pstmt.executeQuery(); //실제로 실행했을 때 나오는 결과를 가져다 준다
+			if(rs.next()) { //값이 존재한다면
+				Bbs bbs=new Bbs();
+				bbs.setBbsID(rs.getInt(1));
+				bbs.setBbsTitle(rs.getString(2));
+				bbs.setUserID(rs.getString(3));
+				bbs.setBbsDate(rs.getString(4));
+				bbs.setBbsContent(rs.getString(5));
+				bbs.setBbsAvailable(rs.getInt(6));
+				return bbs;
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }
 
 
