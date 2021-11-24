@@ -29,6 +29,8 @@
 
 강의와 mysql버전이 달라서 며칠간 고생했다;;11/21
 글 제목에 utf8을 적용하려고 시행착오를 많이 격었다. 11/22~23
+진짜 접을 뻔했다;; 고치고 다음날 되면 또 오류가 난다
+ALTER TABLE user convert to charset utf8;!! 11/24
 # References
 
 [참고한 유튜브](https://www.youtube.com/watch?v=MtxFWczSFqU&list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6&index=2)
