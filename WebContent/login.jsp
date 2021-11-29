@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
-<meta name="viewport" content="width=divice-width" initial-scale="1"> <!--반응형 디자인-->
+<meta name="viewport" content="width=divice-width" ,initial-scale="1"> <!--반응형 디자인-->
 <link rel="stylesheet" href="css/bootstrap.css">
 <title>JSP게시판 웹 사이트</title>
 </head>

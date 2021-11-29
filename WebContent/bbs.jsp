@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
-<meta name="viewport" content="width=divice-width" initial-scale="1"> <!--반응형 디자인-->
+<meta name="viewport" content="width=divice-width" ,initial-scale="1"> <!--반응형 디자인-->
 <link rel="stylesheet" href="css/bootstrap.css">
 <title>JSP게시판 웹 사이트</title>
 <style type="text/css">
@@ -98,7 +98,7 @@
 					<tr>
 						<td><%=list.get(i).getBbsID() %></td>
 						<td><a href="view.jsp?bbsID=<%=list.get(i).getBbsID()%>">
-						<%=list.get(i).getBbsTitle().replaceAll(" ","&nbsp;").replaceAll("<","&lt;").replaceAll("/n","<br>") %>%></a></td> <!-- view.jsp로 해당 게시글 번호를 매개변수로 보냄 -->
+						<%=list.get(i).getBbsTitle().replaceAll(" ","&nbsp;").replaceAll("<","&lt;").replaceAll("/n","<br>") %></a></td> <!-- view.jsp로 해당 게시글 번호를 매개변수로 보냄 -->
 						<td><%=list.get(i).getUserID() %></td>
 						<td><%=list.get(i).getBbsDate().substring(0,11)+
 						list.get(i).getBbsDate().substring(11,13)+"시"+

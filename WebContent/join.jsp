@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
-<meta name="viewport" content="width=divice-width" initial-scale="1"> <%--반응형 디자인--%>
+<meta name="viewport" content="width=divice-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
 <title>JSP게시판 웹 사이트</title>
 </head>
@@ -72,7 +72,7 @@
 		</div>
 	</div>
 	<script src="http://code.jquery.com/jqery-3.3.7.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	
 </body>

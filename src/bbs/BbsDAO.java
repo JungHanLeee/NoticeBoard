@@ -126,6 +126,30 @@ public class BbsDAO {
 		}
 		return null;
 	}
+	public int update(int bbsID,String bbsTitle,String bbsContent) {
+		String SQL="UPDATE BBS SET bbsTitle=?,bbsContent=? WHERE bbsID=?"; //특정한 id에 해당하는 제목과 내용을 수정
+		try {
+			PreparedStatement pstmt =conn.prepareStatement(SQL); //현재 연결되어있는 객체(conn)을 이용해서 SQL문장을 실행 준비단계 로 만들어준다
+			pstmt.setString(1, bbsTitle);
+			pstmt.setString(2, bbsContent);
+			pstmt.setInt(3, bbsID);
+			return pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1; //데이터베이스 오류	
+	}
+	public int delete(int bbsID) {
+		String SQL="UPDATE BBS SET bbsAvailable =0 WHERE bbsID=?"; //특정한 id에 해당하는 제목과 내용을 수정
+		try {
+			PreparedStatement pstmt =conn.prepareStatement(SQL); //현재 연결되어있는 객체(conn)을 이용해서 SQL문장을 실행 준비단계 로 만들어준다
+			pstmt.setInt(1, bbsID);
+			return pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1; //데이터베이스 오류			
+	}
 }
 
 
