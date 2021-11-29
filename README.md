@@ -16,9 +16,13 @@
 + 게시판에 작성 기능추가
 ![image](https://user-images.githubusercontent.com/89134202/142997041-268b9dc8-e1b2-4857-963f-86f3c57d2260.png)
 ![image](https://user-images.githubusercontent.com/89134202/143244398-4e0a6e0b-21fc-48c4-b5f6-b5f5edf60d6a.png)
-+ 게시글 수정 삭제기능
++ 자신이 작성한 게시글 수정 삭제기능
 ![image](https://user-images.githubusercontent.com/89134202/143256674-af26d3e5-0f59-43cb-a59b-ca6c816477bc.png)
++ 자신이 작성하지 않은 게시글![권한없음](https://user-images.githubusercontent.com/89134202/143874042-0f1ba77a-c8a3-4c6d-97ce-f4f9e3fffc64.GIF)
 
++ 8번 게시글 수정![글 수정](https://user-images.githubusercontent.com/89134202/143874179-0d352653-4d14-4ca8-a0fe-f73e31db0dfb.GIF)
+
++ 8번 게시글 삭제![삭제](https://user-images.githubusercontent.com/89134202/143874219-1d2816bc-a2bb-48a3-bbfb-e53bbfb50726.GIF)
 
 
 # TodoList
@@ -37,7 +41,9 @@
 
 진짜 접을 뻔했다;; 고치고 다음날 되면 또 오류가 난다
 ALTER TABLE user convert to charset utf8;  
-특수문자 또한 출력이 가능하게 해 악성스크립트 방지//1124
+특수문자 또한 출력이 가능하게 해 악성스크립트 방지 11/24
+
+또 데이터베이스에 문제가 생겼었다 mysql installer들어가고 user.DAO,bbsDAO파일을 어떻게 하다보니 연동이 됐다, 삭제 수정기능 추가 근데 삭제 했을 떄 데이터베이스에 남아있어서 그런지 번호가 채워지지 않는다 11/29
 # References
 
 [참고한 유튜브](https://www.youtube.com/watch?v=MtxFWczSFqU&list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6&index=2)
