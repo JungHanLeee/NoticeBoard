@@ -1,0 +1,8 @@
+@import url(http://fonts.goolgeapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.goolgeapis.com/earlyaccess/hanna.css);
+*{
+	font-family:'Nanum Gothic'; <!--전반적으로 나눔고딕체 사용-->
+}
+h1{
+	font-family:'Hanna'; <!--h1 태그에는 Hanna체 사용-->
+}
