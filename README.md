@@ -24,6 +24,9 @@
 
 + 8번 게시글 삭제![삭제](https://user-images.githubusercontent.com/89134202/143874219-1d2816bc-a2bb-48a3-bbfb-e53bbfb50726.GIF)
 
++ 메인화면 이미지 추가
+![image](https://user-images.githubusercontent.com/89134202/144020405-452192d7-b069-4568-b31f-4cd766473fed.png)
+
 
 # TodoList
 ~~서버와 데이터 통신~~
@@ -44,6 +47,8 @@ ALTER TABLE user convert to charset utf8;
 특수문자 또한 출력이 가능하게 해 악성스크립트 방지 11/24
 
 또 데이터베이스에 문제가 생겼었다 mysql installer들어가고 user.DAO,bbsDAO파일을 어떻게 하다보니 연동이 됐다, 삭제 수정기능 추가 근데 삭제 했을 떄 데이터베이스에 남아있어서 그런지 번호가 채워지지 않는다 11/29
+
+메인화면에 이미지, 이미지를 넘기는 버튼 추가 11/30
 # References
 
 [참고한 유튜브](https://www.youtube.com/watch?v=MtxFWczSFqU&list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6&index=2)
